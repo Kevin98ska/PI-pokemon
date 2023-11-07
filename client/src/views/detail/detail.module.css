@@ -1,0 +1,48 @@
+.image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 60%;
+    margin-right: 100px;
+    position:absolute;
+    left: 750px; 
+    bottom: 105px;
+    
+  }
+  
+  .container {
+  
+    /* background-image: url("../landing/pokeball.jpg");  */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+   
+  }
+  
+  
+  .properties {
+    color:black;/* Cambia el color del texto a blanco */
+    text-align:left;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    margin-left: 20%; /* de izq a der */
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 65px; 
+    color: black; 
+    text-align:left;
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20%; 
+    margin-top: 150px;
+  }
+  
+  

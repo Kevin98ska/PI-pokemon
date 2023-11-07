@@ -1,0 +1,9 @@
+/* Estilos para el componente Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* inherit las pone en fila */
+    justify-content:space-around; /* Ajusta la distribución de las tarjetas */
+    margin-top: 0px;
+  }
+  
+  

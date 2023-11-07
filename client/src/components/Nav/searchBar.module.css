@@ -1,0 +1,30 @@
+.search-container {
+    gap: 1px;
+    margin-top: 0px;
+  }
+  
+  .input-search {
+    flex: 1;
+    padding: 3px 100px; /* ancho del campo de búsqueda */
+    margin-right: 50px;
+    border-radius: 0px;
+    border-color: transparent;
+    
+  }
+  
+  .button-add {
+    background-color: #c4c4c4;;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 25px;
+    color: rgba(0, 0, 0, 0.74);
+    text-decoration: none;
+  }
+
+  .button-add:hover {
+    background-color: rgb(238, 238, 138);
+    color: rgba(0, 0, 0, 0.74);
+  }

@@ -17,12 +17,18 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
+const { sendData } = require('./src/dataHandlers.js');
+const PORT = 3001;
+const server = require('./src/server.js');
 
-// Syncing all the models at once.
+// Sincroniza la BD y luego inicia el servidor
 conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+  console.log("Base de datos sincronizada correctamente.");
+  server.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}!`);
+    sendData(); // despues de sincronizar la BD
   });
+}).catch((error) => {
+  console.error("Error al sincronizar la base de datos:", error);
 });

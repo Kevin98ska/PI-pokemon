@@ -1,0 +1,29 @@
+.container {
+  background-color: rgba(247, 247, 247, 0.932);
+  border: 1px solid #000000; /* Borde para la tarjeta */
+  padding: 10px; /* Añade un espacio interno en la tarjeta */
+  text-align: center; /* Centra el contenido en la tarjeta */
+  width: 150px; /* Ancho fijo para la tarjeta (ajusta según tus necesidades) */
+  max-width: 100%; /* Ancho máximo para asegurar que las tarjetas se adapten al contenedor */
+  height: auto; /* Ajusta la altura automáticamente según el contenido */
+  margin: 10px;
+  display: flex; /* Usa flexbox para controlar la disposición de elementos */
+  flex-direction: column; /* Coloca elementos en columna */
+}
+
+.image {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Ajusta la altura automáticamente según el ancho */
+}
+
+.name {
+  font-weight: bold;
+  font-size: 14px; /* Aumenta el tamaño de la fuente del nombre */
+  margin-top: 10px; /* Espacio superior */
+}
+
+.types {
+  font-weight: bold;
+  font-size: 12px; /* Aumenta el tamaño de la fuente de los tipos */
+  margin-top: 5px; /* Espacio superior */
+}
